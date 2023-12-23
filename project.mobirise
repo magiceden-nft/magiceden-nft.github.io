@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2023-12-23 18:31",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://magiceden-nft.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://magiceden-nft.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": true,
+    "usedWebp": true,
+    "favicon": false,
+    "mbrsiteDomain": "k85poy42tx",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Magic Eden™ - NFT Marketplace| Home Official Site",
+        "meta_descr": "Magic Eden is the leading community-centric NFT marketplace. Home to the next generation of creators. Discover the best and latest NFT collections today.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://magiceden.io/\"><img src=\"@PROJECT_PATH@/assets/images/magiceden.png\" alt=\"Magic Eden\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tZgCutKWKT",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://magiceden-nft.github.io/\" class=\"text-primary\">Magic Eden</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Unveiling the Magic: Exploring the World of <a href=\"https://magiceden.io/\" class=\"text-primary\">MagicEden</a> NFTs</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the ever-evolving landscape of digital assets, Non-Fungible Tokens (NFTs) have emerged as a groundbreaking phenomenon, disrupting traditional notions of ownership and value. Among the myriad of NFT platforms, MagicEden has carved its niche, captivating the imagination of creators, collectors, and investors alike. In this article, we will delve into the enchanting realm of MagicEden NFTs, exploring their features, significance, and the magic they bring to the world of digital art and collectibles.\n<br>\n<br>The Genesis of MagicEden\n<br>\n<br>MagicEden, established as an NFT marketplace, was designed to provide a seamless and user-friendly platform for creators to mint, sell, and trade NFTs. Launched against the backdrop of the booming NFT market, MagicEden aimed to address some of the challenges faced by artists and collectors, such as high gas fees, limited scalability, and environmental concerns associated with certain blockchain networks.\n<br>\n<br>The Core Features of MagicEden\n<br>\n<br>Low Transaction Costs:\n<br>One of the standout features of MagicEden is its commitment to minimizing transaction costs. Recognizing the hindrance posed by exorbitant gas fees on certain blockchain networks, MagicEden seeks to provide an affordable alternative for creators and collectors. This commitment has positioned MagicEden as a user-friendly platform, especially appealing to emerging artists and enthusiasts looking to enter the NFT space without being deterred by high fees.\n<br>\n<br>Scalability and Speed:\n<br>MagicEden is built on scalable blockchain technology, enabling faster and more efficient transactions. The platform's architecture is designed to handle a high volume of transactions without compromising on speed or performance. This scalability ensures that MagicEden remains a viable option for artists and collectors, even as the NFT market continues to grow exponentially.\n<br>\n<br>Eco-Friendly Approach:\n<br>In response to growing concerns about the environmental impact of blockchain technology, MagicEden has adopted a more sustainable approach. The platform operates on blockchains that use consensus mechanisms with lower energy consumption, mitigating the ecological footprint associated with NFT transactions. This eco-friendly ethos aligns with the increasing demand for environmentally conscious solutions in the blockchain space.\n<br>\n<br>Community Engagement:\n<br>MagicEden places a strong emphasis on community engagement, fostering a vibrant ecosystem where artists and collectors can connect. The platform provides tools and features that enable creators to interact with their audience, build a fan base, and gain recognition. This focus on community building sets MagicEden apart, creating a supportive environment for both established and emerging talents.\n<br>\n<br>The MagicEden Marketplace\n<br>\n<br>The MagicEden marketplace serves as a digital gallery where creators can showcase and sell their NFTs, while collectors can explore and acquire unique digital assets. The marketplace operates on a decentralized model, eliminating the need for intermediaries and providing a direct connection between creators and buyers.\n<br>\n<br>Smart Contracts:\n<br>MagicEden leverages smart contracts to facilitate and automate transactions on the platform. Smart contracts enable the creation of programmable agreements, ensuring that the terms of a transaction are executed automatically when predefined conditions are met. This not only streamlines the buying and selling process but also enhances transparency and trust within the MagicEden community.\n<br>\n<br>Curation and Discovery:\n<br>To navigate the vast array of digital assets on the platform, MagicEden employs curation and discovery features. These tools help users discover new and exciting NFTs, providing exposure to artists who may not have a large following. By implementing effective curation mechanisms, MagicEden enhances the overall browsing and purchasing experience for collectors.\n<br>\n<br>Royalties and Resale Benefits:\n<br>MagicEden supports the concept of royalties, allowing creators to earn a percentage of the resale value each time their NFT changes hands in the secondary market. This feature incentivizes artists and provides them with an ongoing revenue stream, fostering a sustainable ecosystem that benefits both creators and collectors.\n<br>\n<br>The Significance of MagicEden in the NFT Landscape\n<br>\n<br>As the NFT space continues to evolve, platforms like MagicEden play a crucial role in shaping the future of digital ownership and creative expression. Here are some key aspects that highlight the significance of MagicEden in the broader NFT landscape:\n<br>\n<br>Accessibility and Inclusivity:\n<br>MagicEden's commitment to low transaction costs and scalability contributes to the accessibility and inclusivity of the platform. By reducing barriers to entry, MagicEden empowers a diverse range of creators to participate in the NFT space, democratizing the world of digital art and collectibles.\n<br>\n<br>Sustainability in Focus:\n<br>The eco-friendly approach adopted by MagicEden reflects a growing awareness within the blockchain community regarding the environmental impact of certain technologies. This commitment to sustainability positions MagicEden as a forward-thinking platform that addresses concerns related to energy consumption and environmental sustainability.\n<br>\n<br>Empowering Creators:\n<br>MagicEden's emphasis on community engagement and providing tools for creators to connect with their audience goes beyond mere transactional interactions. The platform actively contributes to the empowerment of artists, helping them build their brand, gain recognition, and derive meaningful value from their creative endeavors.\n<br>\n<br>Building a Supportive Ecosystem:\n<br>The MagicEden community functions as a supportive ecosystem where artists and collectors can collaborate, share insights, and celebrate the diversity of digital creativity. This sense of community fosters a positive environment that goes beyond financial transactions, enriching the overall experience for participants on the platform.\n<br>\n<br>Challenges and Future Prospects\n<br>\n<br>While MagicEden has made significant strides in addressing key issues within the NFT space, challenges and opportunities lie ahead. The platform must continue to adapt to evolving technological landscapes, user preferences, and market dynamics. Moreover, maintaining a balance between user-friendly features and robust security measures will be essential to ensure the long-term success and trust of the MagicEden community.\n<br>\n<br>Looking to the future, MagicEden has the potential to further disrupt the traditional art and collectibles market by innovating and expanding its offerings. The platform could explore partnerships, collaborations, and integrations with other blockchain projects or industries, thereby extending its reach and impact.\n<br>\n<br>Conclusion\n<br>\n<br>MagicEden stands as a testament to the transformative power of NFTs in reshaping how we perceive and engage with digital assets. By addressing key challenges in the NFT space, such as high transaction costs and environmental concerns, MagicEden has positioned itself as a frontrunner in the quest for a more accessible, sustainable, and community-driven digital marketplace. As the magic of NFTs continues to captivate the world, MagicEden stands poised to play a pivotal role in shaping the future of decentralized digital ownership and creative expression.<br></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tZgCvi0t9w",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
